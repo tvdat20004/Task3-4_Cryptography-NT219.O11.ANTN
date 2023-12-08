@@ -1,0 +1,10 @@
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\bin\Debug\key_gen_UI.exe.config
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\bin\Debug\key_gen_UI.exe
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\bin\Debug\key_gen_UI.pdb
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.csproj.AssemblyReference.cache
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.Form1.resources
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.Properties.Resources.resources
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.csproj.GenerateResource.cache
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.csproj.CoreCompileInputs.cache
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.exe
+D:\tvdat20004\crypto\code\task3\key_gen_UI\key_gen_UI\obj\Debug\key_gen_UI.pdb

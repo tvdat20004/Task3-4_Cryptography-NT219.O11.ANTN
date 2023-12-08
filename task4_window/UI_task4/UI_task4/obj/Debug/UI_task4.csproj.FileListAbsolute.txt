@@ -1,0 +1,10 @@
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\bin\Debug\UI_task4.exe.config
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\bin\Debug\UI_task4.exe
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\bin\Debug\UI_task4.pdb
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.csproj.AssemblyReference.cache
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.Form1.resources
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.Properties.Resources.resources
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.csproj.GenerateResource.cache
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.csproj.CoreCompileInputs.cache
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.exe
+D:\tvdat20004\crypto\code\task4\UI_task4\UI_task4\obj\Debug\UI_task4.pdb

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c6feacd0-c508-4b0d-b629-03539ad88326}</ProjectGuid>
+    <RootNamespace>keygen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;KEYGEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;KEYGEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;KEYGEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\Downloads\setup\cryptopp880\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>"C:\Users\Lenovo\Downloads\setup\cryptopp880\x64\Output\Debug\cryptlib.lib";%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;KEYGEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\3way.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\adler32.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\adv_simd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\aes.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\aes_armv4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\algebra.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\algparam.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\allocate.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\arc4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\argnames.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\aria.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\arm_simd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\asn.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\authenc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\base32.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\base64.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\basecode.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\bench.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\blake2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\blowfish.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\blumshub.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\camellia.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cast.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cbcmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ccm.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\chacha.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\chachapoly.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cham.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\channels.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_align.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_asm.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_cpu.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_cxx.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_dll.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_int.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_misc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_ns.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_os.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\config_ver.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cpu.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\crc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\cryptlib.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\darn.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\default.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\des.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\dh.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\dh2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\dll.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\dmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\donna.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\donna_32.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\donna_64.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\donna_sse.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\drbg.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\dsa.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\eax.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ec2n.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\eccrypto.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ecp.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ecpoint.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\elgamal.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\emsa2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\eprecomp.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\esign.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\factory.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\fhmqv.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\files.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\filters.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\fips140.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\fltrimpl.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gcm.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gf256.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gf2n.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gf2_32.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gfpcrypt.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gost.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\gzip.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hashfwd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hc128.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hc256.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hex.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hight.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hkdf.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hmqv.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\hrtimer.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ida.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\idea.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\integer.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\iterhash.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\kalyna.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\keccak.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\lea.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\lsh.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\lubyrack.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\luc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\mars.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\md2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\md4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\md5.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\mdc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\mersenne.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\misc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\modarith.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\modes.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\modexppc.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\mqueue.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\mqv.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\naclite.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\nbtheory.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\nr.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\oaep.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\oids.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\osrng.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ossig.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\padlkrng.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\panama.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pch.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pem.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pem_common.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pkcspad.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\poly1305.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\polynomi.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ppc_simd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pssr.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pubkey.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\pwdbased.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\queue.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rabbit.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rabin.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\randpool.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rc2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rc5.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rc6.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rdrand.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\resource.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rijndael.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ripemd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rng.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rsa.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\rw.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\safer.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\salsa.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\scrypt.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\seal.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\secblock.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\secblockfwd.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\seckey.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\seed.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\serpent.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\serpentp.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sha.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sha1_armv4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sha256_armv4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sha3.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sha512_armv4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\shacal2.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\shake.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\shark.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\simeck.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\simon.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\simple.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\siphash.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\skipjack.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sm3.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sm4.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\smartptr.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\sosemanuk.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\speck.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\square.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\stdcpp.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\strciphr.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\tea.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\threefish.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\tiger.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\trap.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\trunhash.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\ttmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\tweetnacl.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\twofish.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\validate.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\vmac.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\wake.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\whrlpool.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\words.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\x509cert.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\xed25519.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\xtr.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\xtrcrypt.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\xts.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\zdeflate.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\zinflate.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\include\cryptopp\zlib.h" />
+    <ClInclude Include="C:\Users\Lenovo\Downloads\setup\cryptopp880\pem_write.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

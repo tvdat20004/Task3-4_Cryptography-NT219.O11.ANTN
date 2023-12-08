@@ -1,0 +1,3 @@
+D:\tvdat20004\crypto\code\task3\key_gen\key_gen\x64\Debug\key_gen.dll
+D:\tvdat20004\task3\key_gen\key_gen\x64\Debug\key_gen.dll
+D:\tvdat20004\task3_window\key_gen\key_gen\x64\Debug\key_gen.dll

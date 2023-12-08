@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.sage": "python",
+        "string": "cpp",
+        "functional": "cpp",
+        "chrono": "cpp"
+    }
+}
